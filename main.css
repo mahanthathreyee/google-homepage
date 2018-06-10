@@ -1,20 +1,52 @@
-#logo{
+#logo {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 16%;
+	margin-top: 10%;
 }
 
-#search_input{
+#search_input {
 	display: block;
-	width: 500px;
-	margin-top: 1%;
+	width: 600px;
+	margin-top: 3em;
 	margin-right: auto;
 	margin-left: auto;
 }
-input:focus, input:hover{
-	outline: 0em !important; 
-	box-shadow: -1px 2px 2px 2px #e3e3e3;
+
+input[type="text"]:hover{
+	outline: 0em #0000 !important; 
+	box-shadow: -1px 1px 1px 1px #e3e3e3;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
+}
+input[type="text"]:focus{
+	outline: 0em #0000 !important; 
+	box-shadow: 0px 2.5px 2.5px 2.5px #e3e3e3;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.page_buttons{
+	display: flex;
+	justify-content: center;
+}
+
+#search_button, #lucky_button {
+	display: inline-block;
+	margin-top: 2em;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 13px;
+	text-align: center;
+	padding: 10px 16px;
+	border-radius: 2px;
+	background: #f2f2f2;
+	border: none;
+	color: grey;
+}
+
+#search_button:hover, #lucky_button:hover {
+	border: 0.5px #c1c1c1 solid !important;
+	box-shadow: none;
+	color: black;
 }
